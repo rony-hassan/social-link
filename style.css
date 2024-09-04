@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    background: hsl(0, 0%, 20%);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+a:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+}
+
+main{
+    display: flex;
+    background: hsl(0, 0%, 8%);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    height: 100vh;
+}
+
+.card{
+    background: hsl(0, 0%, 12%);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 10px;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+img{
+    width: 80px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    color: white;
+    margin-bottom: 5px;
+}
+
+.heading p{
+    font-size: 14px;
+    color: hsl(75, 94%, 57%);
+}
+
+.profile > p{
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.social-links{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 375px) {
+    
+    main{
+        height: 120vh;
+    }
+
+    .card{
+        padding: 1rem;
+    }
+
+}
